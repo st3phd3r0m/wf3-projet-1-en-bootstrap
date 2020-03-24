@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Exercice html</title>
-    
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Fichiers CSS -->
     <link rel="stylesheet" href="css/styles.css">
-    
+
     <!-- <style>
         nav ul li:first-child a {
             color:black;
@@ -17,9 +19,98 @@
         }
     </style> -->
 </head>
+
 <body>
 
-    <nav> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand ml" href="#">
+            <img src="images/index.jpg" alt="logo webforce3">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Acceuil <span class="sr-only">(Page courante)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Annuaire</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li> -->
+                <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li> -->
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        </div>
+    </nav>
+
+    <main class="container-fluid border-top border-bottom border-dark">
+        <div class="row flex-md-row-reverse flex-xl-row">
+            <aside class="col-md-3">
+                <article class="p-md-2 my-md-2">
+                    <h1>Partie 1</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ipsa iure sed veniam
+                        necessitatibus a quasi culpa officia libero illum recusandae earum, est rem debitis ea!
+                        Doloremque rerum molestiae commodi!</p>
+                </article>
+                <article class="p-md-2 my-md-2">
+                    <h1>Partie 2</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ipsa iure sed veniam
+                        necessitatibus a quasi culpa officia libero illum recusandae earum, est rem debitis ea!
+                        Doloremque rerum molestiae commodi!</p>
+                </article>
+            </aside>
+
+            <section class="col-md-9 pb-2">
+                <h1>Titre du site</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa saepe natus ea, ducimus commodi nihil
+                    voluptas quos architecto illo officiis, consectetur quod iure vero sit, eveniet tenetur blanditiis
+                    deleniti distinctio?</p>
+
+                <img src="images/ID.jpg" alt="Monsieur qui sourit" class="rounded-circle">
+            </section>
+        </div>
+
+
+
+    </main>
+
+    <footer class="container-fluid text-center">
+        <p>&copy; WebForce3 2020</p>
+    </footer>
+
+    <!-- OU
+        
+        <footer class="container-fluid text-center">
+        <p class="w-25 mx-auto">&copy; WebForce3 2020</p>
+    </footer> -->
+
+
+    <!-- <nav> 
         <img src="images/index.jpg" alt="logo webforce3">
         <ul>
             <li>
@@ -62,8 +153,9 @@
 
     <footer>
         <p>&copy; WebForce3 2020</p>
-    </footer>
+    </footer> -->
 
 
 </body>
+
 </html>

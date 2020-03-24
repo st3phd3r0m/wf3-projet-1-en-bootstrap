@@ -1,0 +1,28 @@
+
+/* Vue mobile */
+.navbar-brand img{
+    width:100px;
+}
+
+section img{
+    width:200px;
+}
+
+/* Vue tablette */
+@media screen and (min-width : 768px){
+    article{
+        border: 1px solid black;
+    }
+
+    section{
+        border-right:1px solid black;
+    }
+} 
+
+/* Vue ordi */
+@media screen and (min-width : 1200px){
+    section{
+        border: none;
+        border-left:1px solid black;
+    }
+} 
