@@ -7,9 +7,9 @@
     <!-- Fichiers CSS -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles-responsive.css">
-    
+
     <style>
-        nav ul li:first-child a {
+        nav ul li:last-child a {
             color:black;
             font-weight: bold;
         }
@@ -21,7 +21,7 @@
         <img src="images/index.jpg" alt="logo webforce3">
         <ul>
             <li>
-                <a href="index.html" rel="noopener noreferrer" >Acceuil</a>
+                <a href="index.html" rel="noopener noreferrer">Acceuil</a>
             </li>
             <li>
                 <a href="article.html" rel="noopener noreferrer">Articles</a>
@@ -49,10 +49,29 @@
         </aside>
 
         <section>
-            <h1>Titre du site</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa saepe natus ea, ducimus commodi nihil voluptas quos architecto illo officiis, consectetur quod iure vero sit, eveniet tenetur blanditiis deleniti distinctio?</p>
+            <h1>Formulaire de contact</h1>
+            <form action="#">
 
-            <img src="images/ID.jpg" alt="Monsieur qui sourit">
+                <div>
+                    <label for="sujet">Sujet :</label>
+                    <input type="text" id="sujet" name="sujet">                    
+                </div>
+
+                <div>
+                    <label for="courriel">E-mail :</label>
+                    <input type="email" id="courriel" name="courriel">                    
+                </div>
+
+                <div>
+                    <label for="message">Message :</label>
+                    <textarea id="message">dfnfgn</textarea>                       
+                </div>
+
+
+                <button type="submit">Valider</button>
+
+            </form>
+
 
         </section>
 
