@@ -5,218 +5,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercice html 2</title>
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">    
+
     <!-- Fichiers CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles-responsive.css">
-    <style>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- <style>
         nav ul li:nth-child(2) a {
             color:black;
             font-weight: bold;
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
 
-    <nav>
-        <img src="images/index.jpg" alt="logo webforce3">
-        <ul>
-            <li>
-                <a href="index.html" rel="noopener noreferrer">Acceuil</a>
-            </li>
-            <li>
-                <a href="article.html" rel="noopener noreferrer">Articles</a>
-            </li>
-            <li>
-                <a href="annuaire.html" rel="noopener noreferrer">Annuaire</a>
-            </li>
-            <li>
-                <a href="contact.html" rel="noopener noreferrer">Contact</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand ml" href="#">
+            <img src="images/index.jpg" alt="logo webforce3">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Acceuil <span class="sr-only">(Page courante)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="article.html">Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="annuaire.html">Annuaire</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li> -->
+                <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li> -->
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        </div>
     </nav>
 
 
-    <main>
-        <aside>
-            <article>
-                <h1>Partie 1</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ipsa iure sed veniam necessitatibus
-                    a quasi culpa officia libero illum recusandae earum, est rem debitis ea! Doloremque rerum molestiae
-                    commodi!</p>
-            </article>
-            <article>
-                <h1>Partie 2</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ipsa iure sed veniam necessitatibus
-                    a quasi culpa officia libero illum recusandae earum, est rem debitis ea! Doloremque rerum molestiae
-                    commodi!</p>
-            </article>
-        </aside>
+    <main class="container-fluid border-top border-bottom border-dark">
+        <div class="row flex-md-row-reverse flex-xl-row">
+            <aside class="col-md-3">
+                <article class="p-md-2 my-md-2">
+                    <h1>Partie 1</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ipsa iure sed veniam
+                        necessitatibus a quasi culpa officia libero illum recusandae earum, est rem debitis ea!
+                        Doloremque rerum molestiae commodi!</p>
+                </article>
+                <article class="p-md-2 my-md-2">
+                    <h1>Partie 2</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ipsa iure sed veniam
+                        necessitatibus a quasi culpa officia libero illum recusandae earum, est rem debitis ea!
+                        Doloremque rerum molestiae commodi!</p>
+                </article>
+            </aside>
 
-        <section>
+            <section class="col-md-9 pb-2">
 
-            <h1>Liste des articles</h1>
+                <h1>Liste des articles</h1>
 
-            <div>  <!-- div>(article>h1{Article}+p>lorem40)*30 -->
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-                <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi, ducimus doloremque ad
-                        veritatis distinctio iste alias maxime reiciendis debitis nihil rem excepturi nostrum,
-                        cupiditate atque! Facilis aliquam quos voluptas?</p>
-                </article>
-            </div>
-        </section>
+                <div class="d-md-flex flex-wrap">  
 
+                    <article class="card-body">
+                        <h5 class="card-title">Article</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nihil eius quisquam enim tempore tenetur repellat, quia cupiditate voluptas aspernatur, perferendis tempora laborum nulla quidem exercitationem voluptatem minus similique, blanditiis mollitia delectus id voluptate perspiciatis qui? Atque officiis eaque non.</p>
+                        <a href="#" class="btn btn-primary">Lorem ipsum dolor sit amet.</a>
+                    </article>
+                    <article class="card-body">
+                        <h5 class="card-title">Article</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nihil eius quisquam enim tempore tenetur repellat, quia cupiditate voluptas aspernatur, perferendis tempora laborum nulla quidem exercitationem voluptatem minus similique, blanditiis mollitia delectus id voluptate perspiciatis qui? Atque officiis eaque non.</p>
+                        <a href="#" class="btn btn-primary">Lorem ipsum dolor sit amet.</a>
+                    </article>
+                    <article class="card-body">
+                        <h5 class="card-title">Article</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nihil eius quisquam enim tempore tenetur repellat, quia cupiditate voluptas aspernatur, perferendis tempora laborum nulla quidem exercitationem voluptatem minus similique, blanditiis mollitia delectus id voluptate perspiciatis qui? Atque officiis eaque non.</p>
+                        <a href="#" class="btn btn-primary">Lorem ipsum dolor sit amet.</a>
+                    </article>
+                    <article class="card-body">
+                        <h5 class="card-title">Article</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nihil eius quisquam enim tempore tenetur repellat, quia cupiditate voluptas aspernatur, perferendis tempora laborum nulla quidem exercitationem voluptatem minus similique, blanditiis mollitia delectus id voluptate perspiciatis qui? Atque officiis eaque non.</p>
+                        <a href="#" class="btn btn-primary">Lorem ipsum dolor sit amet.</a>
+                    </article>
+                    <article class="card-body">
+                        <h5 class="card-title">Article</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nihil eius quisquam enim tempore tenetur repellat, quia cupiditate voluptas aspernatur, perferendis tempora laborum nulla quidem exercitationem voluptatem minus similique, blanditiis mollitia delectus id voluptate perspiciatis qui? Atque officiis eaque non.</p>
+                        <a href="#" class="btn btn-primary">Lorem ipsum dolor sit amet.</a>
+                    </article>
+                    <article class="card-body">
+                        <h5 class="card-title">Article</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nihil eius quisquam enim tempore tenetur repellat, quia cupiditate voluptas aspernatur, perferendis tempora laborum nulla quidem exercitationem voluptatem minus similique, blanditiis mollitia delectus id voluptate perspiciatis qui? Atque officiis eaque non.</p>
+                        <a href="#" class="btn btn-primary">Lorem ipsum dolor sit amet.</a>
+                    </article>
+                    <article class="card-body">
+                        <h5 class="card-title">Article</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nihil eius quisquam enim tempore tenetur repellat, quia cupiditate voluptas aspernatur, perferendis tempora laborum nulla quidem exercitationem voluptatem minus similique, blanditiis mollitia delectus id voluptate perspiciatis qui? Atque officiis eaque non.</p>
+                        <a href="#" class="btn btn-primary">Lorem ipsum dolor sit amet.</a>
+                    </article>
+                    <article class="card-body">
+                        <h5 class="card-title">Article</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nihil eius quisquam enim tempore tenetur repellat, quia cupiditate voluptas aspernatur, perferendis tempora laborum nulla quidem exercitationem voluptatem minus similique, blanditiis mollitia delectus id voluptate perspiciatis qui? Atque officiis eaque non.</p>
+                        <a href="#" class="btn btn-primary">Lorem ipsum dolor sit amet.</a>
+                    </article>
+                    <article class="card-body">
+                        <h5 class="card-title">Article</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nihil eius quisquam enim tempore tenetur repellat, quia cupiditate voluptas aspernatur, perferendis tempora laborum nulla quidem exercitationem voluptatem minus similique, blanditiis mollitia delectus id voluptate perspiciatis qui? Atque officiis eaque non.</p>
+                        <a href="#" class="btn btn-primary">Lorem ipsum dolor sit amet.</a>
+                    </article>
+                    <article class="card-body">
+                        <h5 class="card-title">Article</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nihil eius quisquam enim tempore tenetur repellat, quia cupiditate voluptas aspernatur, perferendis tempora laborum nulla quidem exercitationem voluptatem minus similique, blanditiis mollitia delectus id voluptate perspiciatis qui? Atque officiis eaque non.</p>
+                        <a href="#" class="btn btn-primary">Lorem ipsum dolor sit amet.</a>
+                    </article>
+                    
+
+
+                </div>    
+
+
+
+
+
+            </section>
+        </div>
     </main>
 
-    <footer>
+
+ 
+
+    <footer class="container-fluid text-center">
         <p>&copy; WebForce3 2020</p>
     </footer>
-
 
 </body>
 

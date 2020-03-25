@@ -25,4 +25,10 @@ section img{
         border: none;
         border-left:1px solid black;
     }
+
+    .card-body{
+        width: 200px;
+        margin: 4px;
+        border-radius: 20px;
+    }
 } 
